@@ -709,7 +709,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1240px) {
     .header {
     position: fixed;
     top: 0;
@@ -886,7 +886,7 @@ html {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-@media (max-height: 480px){
+@media (max-height: 510px) {
     /* Modal de Disclaimer */
 .modal-content {
     background-color: #1a1a1a;
