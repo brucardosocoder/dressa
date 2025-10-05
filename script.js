@@ -1,6 +1,8 @@
-        // Variáveis globais
+
+// Variáveis globais
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+let desktopSlides = document.querySelectorAll('.hero-slider .slide');
+let mobileSlides = document.querySelectorAll('.hero-slider-mobile .slide');
 let slideInterval;
 
 // Aguarda o carregamento completo do DOM
@@ -109,13 +111,15 @@ function initNavigation() {
 
 // Slider de Imagens
 function initSlider() {
-    if (slides.length === 0) return;
-
-    // Mostrar primeiro slide
-    slides[0].classList.add('active');
+    if (isMobile()) {
+        if (mobileSlides.length > 0) mobileSlides[0].classList.add('active');
+    } else {
+        if (desktopSlides.length > 0) desktopSlides[0].classList.add('active');
+    }
 }
 
 function startSlider() {
+    const slides = isMobile() ? mobileSlides : desktopSlides;
     if (slides.length <= 1) return;
 
     slideInterval = setInterval(() => {
@@ -124,6 +128,9 @@ function startSlider() {
 }
 
 function changeSlide(direction) {
+    const slides = isMobile() ? mobileSlides : desktopSlides;
+    if (slides.length === 0) return;
+
     slides[currentSlide].classList.remove('active');
     
     currentSlide += direction;
@@ -344,20 +351,18 @@ if (heroSection) {
 
 // Função para detectar dispositivo móvel
 function isMobile() {
-    return window.innerWidth <= 768;
+    return window.innerWidth <= 480;
 }
 
 // Ajustar comportamento baseado no dispositivo
 window.addEventListener('resize', debounce(() => {
     // Reajustar elementos se necessário
-    if (isMobile()) {
-        // Comportamento específico para mobile
-    } else {
-        // Comportamento específico para desktop
-    }
+    // Esta função pode ser expandida para recarregar ou re-inicializar o slider
+    // se a mudança de tamanho cruzar o breakpoint de 480px.
 }, 250));
 
 // Inicializar galeria quando DOM estiver pronto
 document.addEventListener('DOMContentLoaded', function() {
     initGallery();
 });
+
