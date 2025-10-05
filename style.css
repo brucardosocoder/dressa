@@ -861,6 +861,52 @@ body {
     .nav-menu a {
         font-size: 1.2em;
     }
+
+    
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 5px 20px 50px 20px;
+}
+
+.container p{
+    line-height: 1.6;
+}
+
+.section {
+    padding: 20px 0 0 0;
+    line-height: 0;
+}
+
+.section h2 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.section p {
+    font-size: 14px;
+}
+
+.availability ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.availability li {
+    padding: 2px 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
+}
+
 }
 
 /* Smooth scrolling */
@@ -1018,8 +1064,13 @@ html {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.container p{
+    line-height: 1.6;
+}
+
 .section {
-    padding: 30px 0 0 0;
+    padding: 12px 0 0 0;
     line-height: 0;
 }
 
@@ -1032,6 +1083,17 @@ html {
 
 .section p {
     font-size: 14px;
+}
+
+.availability ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.availability li {
+    padding: 2px 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
 }
 
 }
