@@ -885,3 +885,153 @@ html {
 .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
 }
+
+@media (max-height: 480px){
+    /* Modal de Disclaimer */
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px;
+    border: 2px solid #d4af37;
+}
+
+.modal-content h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.322);
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo p {
+    font-size: 0.5em;
+}
+
+.header.scrolled {
+    padding: 7px 10px;
+    background: rgb(0, 0, 0);
+}
+
+.header.scrolled p {
+    display: none;
+}
+
+.header.scrolled img {
+    width: 50px;
+}
+
+.header.scrolled .menu-toggle {
+    right: 1%;
+    top: 10%;
+}
+
+/* Menu Toggle (Sempre visível) */
+.menu-toggle {
+    padding: 5px;
+    right: 3%;
+    top: 15%;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Navigation Menu (Fullscreen overlay) */
+
+.close-menu {
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+}
+
+.nav-menu a {
+    font-size: 1em;
+}
+
+.nav-menu a::after {
+    height: 1px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 220px 80px 0 15px ;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 2.3em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    padding: 8px 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section {
+    padding: 30px 0 0 0;
+    line-height: 0;
+}
+
+.section h2 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.section p {
+    font-size: 14px;
+}
+
+}
