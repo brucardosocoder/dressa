@@ -113,9 +113,14 @@ body {
     color: #fff;
 }
 
-.logo img {
-    width: 200px;
+.logo h1 {  
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
 }
+
 
 .logo p {
     font-size: 0.9em;
@@ -132,8 +137,8 @@ body {
     display: none;
 }
 
-.header.scrolled img {
-    width: 100px;
+.header.scrolled h1 {
+  font-size: 40px;
 }
 
 .header.scrolled .menu-toggle {
@@ -499,6 +504,21 @@ body {
     line-height: 1.6;
 }
 
+/* Rate */
+.rate-content {
+    padding: 40px 0px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.rate-content p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
 /* Etiquette */
 .etiquette-content {
     display: grid;
@@ -538,6 +558,19 @@ body {
     background: black;
     border-radius: 10px;
     border: 1px solid #fff;
+}
+
+.gift-item p img {
+   width: 300px;   
+   transition: transform 0.3s ease;
+}
+
+.gift-item p img:hover {
+    transform: scale(1.05);
+}
+
+#gifts div p {
+    text-align: center;
 }
 
 .gift-item h3 {
@@ -758,8 +791,8 @@ a:active {
     background: rgb(0, 0, 0);
     }
 
-    .header.scrolled img {
-        width: 80px;        
+    .header.scrolled h1 {
+        font-size: 35px;
     }
 
     .header.scrolled .menu-toggle span {
@@ -768,8 +801,8 @@ a:active {
         margin: 2px 0;
     }
 
-    .logo img {
-        width: 150px;
+    .logo h1 { 
+        font-size: 70px;
     }
 
     .hero-text  {
@@ -879,6 +912,15 @@ a:active {
 }
 
 @media (max-width: 480px) {
+
+    .logo h1 { 
+        font-size: 40px;
+    }
+
+    .header.scrolled h1 {
+        font-size: 20px;
+    }
+
     .hero-text h1 {
         font-size: 2em;
     }
@@ -983,6 +1025,11 @@ a:active {
 }
 
     @media (max-width: 320px) {
+
+        .logo h1 { 
+        font-size: 30px;
+    }
+
     .gift-item h3 {
         font-size: 0.7em;
     }
@@ -1047,8 +1094,8 @@ html {
     align-items: center;
 }
 
-.logo img {
-    width: 80px;
+.logo h1 {
+    font-size: 45px;
 }
 
 .logo p {
@@ -1064,8 +1111,8 @@ html {
     display: none;
 }
 
-.header.scrolled img {
-    width: 50px;
+.header.scrolled h1 {
+    font-size: 25px;
 }
 
 .header.scrolled .menu-toggle {
