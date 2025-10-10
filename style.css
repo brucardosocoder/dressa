@@ -1022,6 +1022,10 @@ a:active {
         font-size: 1em;
     }
 
+    .gift-item p img {
+        width: 200px;   
+    }
+
 }
 
     @media (max-width: 320px) {
@@ -1032,6 +1036,10 @@ a:active {
 
     .gift-item h3 {
         font-size: 0.7em;
+    }
+
+    .gift-item p img {
+        width: 100px;
     }
 }
 
@@ -1220,6 +1228,10 @@ html {
     padding: 2px 0;
     border-bottom: 1px solid #eee;
     line-height: 1.6;
+}
+
+.gift-item p img {
+   width: 150px;
 }
 
 }
